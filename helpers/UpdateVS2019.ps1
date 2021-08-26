@@ -96,6 +96,6 @@ $vsOptions = @(
     $optionsQuiet
 )
 
-Start-Process -FilePath $filePath -ArgumentList $vsOptions -Wait
+Start-Process -FilePath $filePath update -ArgumentList $vsOptions -Wait
 Start-Sleep -s 5
 Restart-Computer
